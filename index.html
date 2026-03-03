@@ -22,10 +22,28 @@
       .featured-card:hover {
         transform: scale(1.05) translateY(-4px);
       }
+      .testimonial-card {
+        transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+      .testimonial-card:hover {
+        transform: translateY(-4px);
+        box-shadow:
+          0 20px 25px -5px rgba(0, 0, 0, 0.05),
+          0 8px 10px -6px rgba(0, 0, 0, 0.02);
+      }
+      .dark .testimonial-card:hover {
+        box-shadow:
+          0 20px 25px -5px rgba(0, 0, 0, 0.3),
+          0 8px 10px -6px rgba(0, 0, 0, 0.2);
+      }
     </style>
   </head>
   <body class="bg-white dark:bg-gray-950 text-gray-900 box-border">
-    <nav class="bg-gray-700 shadow-lg sticky w-full top-0 z-50">
+    <nav
+      class="bg-gray-700 dark:bg-gray-400 shadow-lg sticky w-full top-0 z-50"
+    >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-24">
           <div class="flex-shrink-0">
@@ -523,6 +541,111 @@
           All plans include a 30-day money-back guarantee · No credit card
           required to start
         </p>
+      </section>
+      <section class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+          <span
+            class="text-sm font-semibold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider"
+            >Testimonials</span
+          >
+          <h2
+            class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mt-2"
+          >
+            Loved by developers
+          </h2>
+          <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mt-3">
+            See what our customers have to say about their experience.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div
+            class="testimonial-card bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-sm flex flex-col"
+          >
+            <div class="text-amber-400 text-xl mb-4">★★★★★</div>
+            <p
+              class="text-gray-700 dark:text-gray-300 leading-relaxed italic mb-6"
+            >
+              "This platform has completely transformed how our team ships
+              features. The developer experience is unmatched, and the
+              performance is incredible."
+            </p>
+            <div class="flex items-center mt-auto">
+              <div
+                class="w-10 h-10 rounded-full bg-indigo-600 dark:bg-indigo-500 flex items-center justify-center font-bold text-white flex-shrink-0"
+              >
+                FG
+              </div>
+              <div class="ml-3">
+                <p class="font-semibold text-gray-900 dark:text-white">
+                  Frank Gilead
+                </p>
+                <p class="text-sm text-gray-500 dark:text-gray-400">
+                  Lead Engineer, Vercel
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="testimonial-card bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-sm flex flex-col"
+          >
+            <div class="text-amber-400 text-xl mb-4">★★★★★</div>
+            <p
+              class="text-gray-700 dark:text-gray-300 leading-relaxed italic mb-6"
+            >
+              "The best investment we've made this year. Our iteration speed
+              increased by 3x, and the support team is always there when we need
+              them."
+            </p>
+            <div class="flex items-center mt-auto">
+              <div
+                class="w-10 h-10 rounded-full bg-emerald-600 dark:bg-emerald-500 flex items-center justify-center font-bold text-white flex-shrink-0"
+              >
+                KP
+              </div>
+              <div class="ml-3">
+                <p class="font-semibold text-gray-900 dark:text-white">
+                  Kingston Phillip
+                </p>
+                <p class="text-sm text-gray-500 dark:text-gray-400">
+                  Co-Founder, Dunder Mufflin
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="testimonial-card bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-sm flex flex-col"
+          >
+            <div class="text-amber-400 text-xl mb-4">★★★★★</div>
+            <p
+              class="text-gray-700 dark:text-gray-300 leading-relaxed italic mb-6"
+            >
+              "Finally, a tool that actually understands how developers work.
+              The API is a joy to use, and the documentation is crystal clear."
+            </p>
+            <div class="flex items-center mt-auto">
+              <div
+                class="w-10 h-10 rounded-full bg-rose-600 dark:bg-rose-500 flex items-center justify-center font-bold text-white flex-shrink-0"
+              >
+                AK
+              </div>
+              <div class="ml-3">
+                <p class="font-semibold text-gray-900 dark:text-white">
+                  Alex Kim
+                </p>
+                <p class="text-sm text-gray-500 dark:text-gray-400">
+                  Founder, Luma Labs
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex justify-center mt-10 gap-2 text-sm text-gray-400 dark:text-gray-600"
+        >
+          <span>⭐</span> 4.9 average rating from 1,200+ reviews
+        </div>
       </section>
     </main>
   </body>
